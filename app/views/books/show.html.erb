@@ -1,5 +1,5 @@
 <main>
-<p id="notice"></p>
+<p id="notice"><%= notice %></p>
   <div class="container">
     <div class="row">
       <%= render 'users/userinfo', user: @user %>
@@ -27,10 +27,11 @@
                   <%= link_to "Destroy", book_path(@book), method: :delete, data: { confirm: "本当に消しますか？" }, class: "btn btn-sm btn-danger" %>
                 <% end %>
               </td>
-            </tr>
-          </tbody>
-        </table>
+          </tr>
+        </tbody>
+      </table>
       </div>
+      
     </div>
   </div>
 </main>
