@@ -6,4 +6,6 @@ Rails.application.routes.draw do
 
   resources :users
   resources :books
+
+  post '/users/:id' => 'books#create'
 end
