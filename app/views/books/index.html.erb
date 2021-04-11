@@ -1,8 +1,10 @@
 <main>
 <p id="notice"></p>
   <div class="container px-5 px-sm-0">
+
+　  <%= render  'users/error', model: @book %>
     <div class="row">
-      <%= render 'users/userinfo', user: @user, book: @book %>
+      <%= render 'users/userinfo', user: @user %>
 
       <div class="col-md-8 offset-md-1">
         <h2>Books</h2>
