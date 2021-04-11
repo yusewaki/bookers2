@@ -16,11 +16,9 @@
   	</tr>
   </table>
 
-  <div class="row">
-    <% if user.id == current_user.id %>
-      <%= link_to edit_user_path(user) do %>
-        <span class="btn btn-outline-secondary btn-block fas fa-user-cog"></span>
-      <% end %>
+  <div class="row-md-3">
+    <%= link_to edit_user_path(user) do %>
+      <button class="btn btn-outline-secondary btn-block fas fa-user-cog" type="button"></button>
     <% end %>
   </div>
 
